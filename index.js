@@ -116,4 +116,5 @@ app.use(
   })
 );
 
-app.listen(4000, () => console.log("Server Running"));
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => console.log(`Server Running on ${PORT}`));
